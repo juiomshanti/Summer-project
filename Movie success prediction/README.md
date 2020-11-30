@@ -1,4 +1,5 @@
-# Summer projects 
+## Movie Success Predition
 
-1. Movie Success Predition
+# Documentation
+Movie success prediction/Python MiniProject -FINAL WORK/FINAL PROJECT - SUCCESS PREDICTION.pptx 
 
