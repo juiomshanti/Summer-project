@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Euphoria+Script&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color:#fff;
+  display: inline-block;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 99%;
+  padding: 20px;
+}
+
+#play {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid #000;
+  border-bottom: 25px solid transparent;
+}
+
+#play:hover {
+  background: transparent;
+  color: black;
+  border-left: 50px solid #fff;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="Uruguay Feel Nature 1 min.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+  <table>
+  <tr>
+  <td><div id="play" onclick="myFunction()"></div></td>
+  <td><h2>The Nature walk</h2></td>
+  </tr>
+  </table>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var plbtn = document.getElementById("play");
+var pabtn = document.getElementById("pause");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
+</script>
+
+</body>
+</html>

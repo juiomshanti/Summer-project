@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jui patel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+	<header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="navigation">
+				    <a href="homepage.html">Home</a>
+                    <a href="#work">Work</a>
+                    <a href="#bio">About</a>
+                    <a href="https://github.com/juiomshanti/Summer-project">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+	<br><br>
+    <div id="work">
+        <h1>Gallery</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="IMG_20191015_110641.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="IMG_20200108_203023_305.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="IMG-20170415-WA0009.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="IMG-20171002-WA0002.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="IMG_7714.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="_DSC1424.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="IMG-20181031-WA0011.jpg">
+			<img onclick="magnify($(this).attr('src'))" src="takephoto.jpg">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>About</h1>
+		<p>The About Song is a Sight Word Song by Have Fun Teaching. The About Song teaches the sight word ABOUT by showing the sight word about, saying the sight word about, repeating the sight word about, spelling the sight word about, and using the sight word about in a sentence.Conan Doyle wrote four novels and fifty-six short stories that feature Holmes. The first two stories, short novels appeared in Beeton’s Christmas Annual for 1887 and Lippincott’s Monthly Magazine in 1890, respectively.The character grew tremendously in popularity with the beginning of the first series of short stories in The Strand Magazine in 1891; further series of short stories and two serialised novels appeared until 1927.</p>
+    </div>
+    <script src="portfolio.js" type="text/javascript"></script>
+</body>
+</html>
